@@ -68,6 +68,7 @@ function draw(){
         obstacle10 = new Obstacle(2000 , 820);
         obstacle11 = new Obstacle(3000 , 820);
         obstacle12 = new Obstacle(4000 , 820);
+        obstacle11.sprite.shapeColor = "red";
         hurdleGrp.add(obstacle1.sprite);
         hurdleGrp.add(obstacle2.sprite);
         hurdleGrp.add(obstacle3.sprite);
@@ -92,7 +93,7 @@ function draw(){
         clear();
         game.play();
         cars[player.index-1].velocityY+=0.8;
-        console.log(player.hit);
+        console.log(cars[player.index-1].isTouching(hurdleGrp));
         if(car1.isTouching(ground1)){
             car1.velocityY = 0;
         }
@@ -104,6 +105,10 @@ function draw(){
         }
         if(car4.isTouching(ground4)){
             car4.velocityY = 0;
+        }
+        if(cars[player.index-1].isTouching(hurdleGrp)){
+            player.hit=true;
+            
         }
         drawSprites();
     }

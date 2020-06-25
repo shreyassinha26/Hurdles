@@ -1,5 +1,5 @@
 class Obstacle{
     constructor(x , y){
-        this.sprite = createSprite(x , y , 10 , 30);
+        this.sprite = createSprite(x , y , 30 , 30);
     }
 }
