@@ -29,7 +29,11 @@ class Player{
     }
     update(){
         var playerIndex = 'players/player' + playerCount ;
-        database.ref(playerIndex).set({'name' : this.name ,  'distanceCovered' : 0 , 'hit':false});
+        database.ref(playerIndex).set({'name' : this.name ,  'distanceCovered' : 0 , 'hit':false , 'rank':4});
+    }
+    setRank(rank){
+        var playerIndex = 'players/player' + playerCount ;
+        database.ref(playerIndex).set({'name' : this.name ,  'distanceCovered' : 0 , 'hit':false , 'rank':rank});
     }
     updateCount(count){
         count = count;
@@ -38,7 +42,7 @@ class Player{
     }
     updateDistance(){
         var playersIndex = 'players/player' + this.index ;
-        database.ref(playersIndex).set({name : this.name , 'distanceCovered' : this.distanceCovered, 'hit':false});
+        database.ref(playersIndex).set({name : this.name , 'distanceCovered' : this.distanceCovered, 'hit':false, 'rank':4});
 
     }
     static getPlayerInfo(){

@@ -89,6 +89,352 @@ function draw(){
     if(keyCode === 32){
         value = 32;
     }
+    if(gamestate===2){
+        Player.getPlayerInfo();
+        var a = allPlayers[player1][distanceCovered];
+        var b = allPlayers[player2][distanceCovered];
+        var c = allPlayers[player3][distanceCovered];
+        var d = allPlayers[player4][distanceCovered];
+        if(a>b>c>d){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank(1);
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank(2);
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank(3);
+            }
+            else{
+                player.setRank(4);
+            }
+        }
+        else if(a>b>d>c){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank(1);
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank(2);
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank(4);
+            }
+            else{
+                player.setRank(3);
+            }
+        }
+        else if(a>d>c>b){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank(1);
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank(4);
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank(3);
+            }
+            else{
+                player.setRank(2);
+            }
+        }
+        else if(a>d>b>c){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank(1);
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank(3);
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank(4);
+            }
+            else{
+                player.setRank(2);
+            }
+        }
+        else if(a>c>d>b){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank(1);
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank(4);
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank(2);
+            }
+            else{
+                player.setRank(3);
+            }
+        }
+        else if(a>c>b>d){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank(1);
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank(3);
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank(2);
+            }
+            else{
+                player.setRank(4);
+            }
+        }
+        else if(b>a>c>d){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else if(b>d>c>a){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else if(b>d>a>c){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else if(b>c>d>a){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else if(b>c>a>d){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else if(b>a>d>c){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else if(c>b>a>d){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else if(c>b>d>a){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else if(c>a>b>d){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else if(c>a>d>b){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else if(c>d>a>b){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else if(c>d>b>a){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else if(d>b>c>a){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else if(d>b>a>c){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else if(d>c>a>b){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else if(d>c>b>a){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else if(d>a>c>b){
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        else {
+            if(allPlayers['player'+player.index]['distanceCovered']===a){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===b){
+                player.setRank();
+            }
+            else if(allPlayers['player'+player.index]['distanceCovered']===c){
+                player.setRank();
+            }
+            else{
+                player.setRank();
+            }
+        }
+        
+        
+
+    }
     if(/*value === 32 &&*/ gamestate === 1){
         clear();
         game.play();
